@@ -2,6 +2,8 @@
 
 This repository contains all of the Prolog code for Harry Porter's AI24 Prolog lab. All exercises are contained in the `lab-exercises.pl` file.
 
+Google Slides used can be found [HERE](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing) and in the [PTT file](AI24%20-%20Prolog%20Lab.pptx).
+
 ## Databases
 
 ### Database Files
@@ -19,7 +21,7 @@ The `language-database-predicates.pl` file should be used for all exercses in `l
 
 To load SWI Prolog with `.pl` database files, use the `swipl` command with the file names as arguments:
 
-```
+```prolog
 $ swipl language-database-predicates.pl lab-exercises.pl
 ?-
 ```
