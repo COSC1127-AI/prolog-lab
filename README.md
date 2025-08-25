@@ -2,7 +2,6 @@
 
 This repository contains all of the Prolog code for the RMIT AI Prolog lab.
 Exercises are contained in the `lab_exercises.pl` file.
-The corresponding slides can be found [here](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing) and in the [`.pptx` file](slides/AI24%20-%20Prolog%20Lab.pptx).
 
 This lab was developed by:
 
@@ -10,6 +9,11 @@ This lab was developed by:
 - Prof. Sebastian Sardina (instructor)
     - **Email**: ssardina@gmail.com
     - **GitHub**: @ssardina
+
+## Slides
+
+- AI25 slides: ([Google slides](https://docs.google.com/presentation/d/13q_J0zBwmv8KrRDVk71Wo65M-aFHjzzf4xi8aBLc4Ps/edit?usp=sharing); [`.pptx` file](slides//AI25%20-%20Prolog%20Lab.pptx)).
+- AI24 slides: ([Google slides](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing); [`.pptx` file](slides/AI24%20-%20Prolog%20Lab.pptx)).
 
 ## Database Files
 
