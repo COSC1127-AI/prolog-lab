@@ -1,29 +1,44 @@
 # AI Prolog Lab
 
-This repository contains all of the Prolog code for the RMIT AI Prolog lab. All exercises are contained in the `lab-exercises.pl` file.
+This repository contains all of the Prolog code for the RMIT AI Prolog lab. Exercises are contained in the `lab_exercises.pl` file.
 
-Google Slides used can be found [HERE](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing) and in the [PTT file](slides/AI24%20-%20Prolog%20Lab.pptx).
+The corresponding slides can be found [here](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing) and in the [`.pptx` file](slides/AI24%20-%20Prolog%20Lab.pptx).
 
-Lab was developed by Harry Porter (AI'24 tutor) and Prof. Sebastian Sardina (instructor; ssardina@gmail.com; ssardina @ GH).
+This lab was developed by:
 
-## Databases
+- Harry Porter (AI'24 tutor)
+- Prof. Sebastian Sardina (instructor)
+    - **Email**: ssardina@gmail.com
+    - **GitHub**: @ssardina
 
-### Database Files
+## Database Files
 
-The `language-database-predicates.pl` and `language-database-lists.pl` files both contain four predicates:
+The `language_database_predicates.pl` and `language_database_lists.pl` files both contain four definitions:
 
-- `isLanguage/1` specifies that a language is attested, i.e. that it is still spoken or there is written record of it.
-- `isProtoLanguage/1` denotes that a language is unattested, and has been theorised or partially reconstructed using its descendants. Mutually exclusive with `isLanguage/1`.
-- `isExtinct/1` means that there are no living speakers of a language left today.
-- `isParent/2` represents the evolution of languages from their parents.
+- `is_language/1` specifies that a language is attested, i.e. that it is still spoken or there is written record of it
+- `is_proto_language/1` denotes that a language is unattested, and has been theorised or partially reconstructed using its descendants; it is mutually exclusive with `is_language/1`
+- `is_extinct/1` means there are no living speakers of a language left today
+- `is_parent/2` represents the evolution of languages from their parents
 
-The `language-database-predicates.pl` file should be used for all exercses in `lab-exercises.pl` except the final two: `hasDescendants/2` and `hasSpokenDescendants/2`. For these, use `language-database-lists.pl`. The `language-database-propositional.pl` database is only for demonstration.
+The `language_database_predicates.pl` file should be used for all exercses in `lab_exercises.pl` except the final two: `hasDescendants/2` and `hasSpokenDescendants/2`.
+For these, use `language_database_lists.pl`.
+The `language_database_propositions.pl` database is only for demonstration.
 
 ### Loading Databases
 
 To load SWI Prolog with `.pl` database files, use the `swipl` command with the file names as arguments:
 
 ```prolog
-$ swipl language-database-predicates.pl lab-exercises.pl
-?-
+$ swipl language_database_predicates.pl lab_exercises.pl
+```
+
+Alternatively, `consult` the files inside your `swipl` session:
+
+```prolog
+$ swipl
+?- consult('language_database_predicates.pl').
+true.
+
+?- consult('lab_exercises.pl').
+true.
 ```
