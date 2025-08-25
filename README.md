@@ -1,7 +1,7 @@
 # AI Prolog Lab
 
-This repository contains all of the Prolog code for the RMIT AI Prolog lab. Exercises are contained in the `lab_exercises.pl` file.
-
+This repository contains all of the Prolog code for the RMIT AI Prolog lab.
+Exercises are contained in the `lab_exercises.pl` file.
 The corresponding slides can be found [here](https://docs.google.com/presentation/d/1WawWqV4g7SQM29SsHZhNlBtQFrEY4lwu0TdMwcjvQyY/edit?usp=sharing) and in the [`.pptx` file](slides/AI24%20-%20Prolog%20Lab.pptx).
 
 This lab was developed by:
@@ -20,7 +20,7 @@ The `language_database_predicates.pl` and `language_database_lists.pl` files bot
 - `is_extinct/1` means there are no living speakers of a language left today
 - `is_parent/2` represents the evolution of languages from their parents
 
-The `language_database_predicates.pl` file should be used for all exercses in `lab_exercises.pl` except the final two: `hasDescendants/2` and `hasSpokenDescendants/2`.
+The `language_database_predicates.pl` file should be used for all exercses in `lab_exercises.pl` except the final two: `has_descendants/2` and `has_spoken_descendants/2`.
 For these, use `language_database_lists.pl`.
 The `language_database_propositions.pl` database is only for demonstration.
 
