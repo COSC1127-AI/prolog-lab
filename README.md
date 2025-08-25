@@ -6,7 +6,7 @@ The corresponding slides can be found [here](https://docs.google.com/presentatio
 
 This lab was developed by:
 
-- Harry Porter (AI'24 tutor)
+- Harry Porter (AI'24 and AI'25 tutor)
 - Prof. Sebastian Sardina (instructor)
     - **Email**: ssardina@gmail.com
     - **GitHub**: @ssardina
@@ -21,8 +21,8 @@ The `language_database_predicates.pl` and `language_database_lists.pl` files bot
 - `is_parent/2` represents the evolution of languages from their parents
 
 The `language_database_predicates.pl` file should be used for all exercses in `lab_exercises.pl` except the final two: `has_descendants/2` and `has_spoken_descendants/2`.
-For these, use `language_database_lists.pl`.
-The `language_database_propositions.pl` database is only for demonstration.
+For these, use `language_database_lists.pl` instead.
+The `language_database_propositions.pl` file is only for demonstration.
 
 ### Loading Databases
 

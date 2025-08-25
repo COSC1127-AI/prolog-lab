@@ -70,14 +70,14 @@ is_concatenated([X|A],L,[X|B]) :- is_concatenated(A,L,B).
 
 %! `are_languages_related/2`
 are_languages_related([],[]).
-are_languages_related([languages(X,Y)|A],[areRelated(X,Y)|B]) :-
+are_languages_related([languages(X,Y)|A],[related(X,Y)|B]) :-
     share_recent_ancestor(X,Y,_),
     are_languages_related(A,B).
-are_languages_related([languages(X,Y)|A],[notRelated(X,Y)|B]) :-
+are_languages_related([languages(X,Y)|A],[unrelated(X,Y)|B]) :-
     \+ share_recent_ancestor(X,Y,_),
     are_languages_related(A,B).
 are_languages_related([X|A],B) :- % Challenge exercise.
-    X \= areRelated(_,_),
+    X \= languages(_,_),
     are_languages_related(A,B).
 
 
